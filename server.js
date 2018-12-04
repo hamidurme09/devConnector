@@ -27,6 +27,6 @@ app.use('/api/users', users);
 app.use('/api/profile', profile);
 app.use('/api/posts', posts);
 
-app.listen(3000, () => {
-    console.log('server port is running on 3000')
+app.listen(5000, () => {
+    console.log('server port is running on 5000')
 })
