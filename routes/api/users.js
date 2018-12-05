@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../../models/User');
-const avatar = require('gravatar');
+const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const keys = require('../../config/keys');
@@ -18,7 +18,7 @@ router.get('/test', (req, res) => {
     res.send('here is users')
 });
 
-// @route Get api/users/register
+// @route post api/users/register
 // @desc  Tests user
 // @access Public
 router.post('/register', (req, res) => {
